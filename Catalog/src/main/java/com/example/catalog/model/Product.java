@@ -1,4 +1,4 @@
-package com.example.catalog;
+package com.example.catalog.model;
 
 import java.math.BigDecimal;
 
@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 public class Product {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
